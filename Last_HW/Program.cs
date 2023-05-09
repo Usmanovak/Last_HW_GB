@@ -4,4 +4,9 @@
  При решении не рекомендуется пользоваться коллекциями, 
  лучше обойтись исключительно массивами. */
 
- 
+ using System;
+using static System.Console;
+
+Clear();
+string [] array1 = new string[5] {"hello", "7", "hi", "117", "people"};
+string [] array2 = new string [array1.Length];
