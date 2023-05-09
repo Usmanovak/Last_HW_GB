@@ -11,6 +11,9 @@ Clear();
 string [] array1 = new string[5] {"hello", "7", "hi", "117", "people"};
 string [] array2 = new string [array1.Length];
 
+NewArray(array1, array2);
+PrintArray(array2);
+
 void NewArray(string [] array1, string [] array2)
 {
     int count = 0;
@@ -22,4 +25,13 @@ void NewArray(string [] array1, string [] array2)
             count++;
         }
     }
+}
+
+void PrintArray (string [] array)
+{
+    for (int i=0; i<array.Length; i++)
+    {
+        Write($"{array[i]} ");
+    }
+    WriteLine();
 }
